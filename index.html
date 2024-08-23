@@ -2,24 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assaignment-3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assaignment-3</title>
 
-    <!-- DaisyUI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
+
+  <!-- Font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- DaisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .font-Manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'orange': '#ff7849',
+          'arrow-primary': '#ABEF5F',
+          'paragraph': '#ABEF5F80',
+        }
+      }
+    }
+  }
+</script>
 </head>
 
-<body>
-    <!-- Header section -->
-     <header></header>
+<body class="font-Manrope">
+  <!-- Header section -->
+  <header class="md:container mx-auto">
+    <!-- nav bar -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="font-bold text-xl"> <i class="fa-solid fa-arrow-right"></i> Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-bold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-5">
+          <div><i class="fa-solid fa-cart-shopping"></i></div>
+          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+          <button><a class="btn">Book Consult <i class="fa-solid fa-arrow-right"></i> </a></button>
+        </div>
+      </div>
+    </nav>
 
-     <!-- Main section -->
-      <main></main>
+    <!-- Banner section -->
+    <div>
+      <div class="hero  ">
+        <div class="hero-content flex-col ">
+          <img src="./assets/banner.png" class=" rounded-lg" />
+          <div class="text-center">
+            <h1 class="text-2xl font-bold lg:text-6xl lgfont-bold">A barn house of this design has a <br> striking appearance</h1>
+            <p class="py-6">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+              wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+            </p>
+            <button class="bg-[#ABEF5F80] text-black font-bold py-3 px-4 rounded-3xl ">View Details <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      <!-- Footer Section -->
-      <footer></footer>
+  <!-- Main section -->
+  <main class="md:container mx-auto"></main>
+
+  <!-- Footer Section -->
+  <footer></footer>
 
 </body>
 
