@@ -49,10 +49,10 @@
   <header class="md:container mx-auto ">
     <!-- nav bar -->
     <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <a class="font-bold text-3xl"> <i
-              class="fa-solid fa-arrow-right -rotate-45 bg-arrow-primary rounded-full px-1 py-1"></i> Rinterio</a>
+      <div class="navbar bg-base-100 flex justify-around">
+        <div class="navbar-start ">
+          <a class="font-bold text-3xl inline-flex"> 
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full px-1 py-1 pr-2 mr-2"></i> Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -63,13 +63,13 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end gap-5 ">
+        <div class="navbar-end gap-5 hidden sm:flex">
           <div><i class="fa-solid fa-cart-shopping text-#737373 bg-[#FFFFFF] rounded-full px-1 py-1"></i></div>
           <div><i class="fa-solid fa-magnifying-glass text-#737373 bg-[#FFFFFF] rounded-full px-1 py-1"></i></div>
           <button><a class="btn text-xl font-bold bg-arrow-primary rounded-3xl">Book Consult <i
                 class="fa-solid fa-arrow-right text-white -rotate-45 bg-black rounded-full px-1 py-1"></i> </a></button>
         </div>
-        <div tabindex="0" role="button" class="md:hidden">
+        <div  class="md:hidden">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
@@ -234,42 +234,45 @@
         <!-- content  -->
         <div class="md:container mx-auto gap-5 p-7 space-y-2">
           <!-- Flex-div-1 -->
-          <div class="grid grid-cols-1 lg:grid-cols-4">
-            <!-- Box-1 -->
-            <div class="border rounded-2xl p-2">
-              <img src="./assets/img1.png" alt="">
-            </div>
+          <div class="grid grid-cols-1 lg:grid-cols-3 p-2">
 
+           <div class="border rounded-2xl h-96 lg:flex lg:h-56  lg-w-96 lg:col-span-2 mr-5">
+             <!-- Box-1 -->
+             <div class=" relative w-64 h-48 lg:w-full lg:h-56 p-2">
+              <img class="w-64 h-full" src="./assets/img1.png" alt="">
+            </div>
             <!-- Box-2 -->
-            <div class="border rounded-2xl p-2">
-              <h2 class="text-2xl font-bold text-[#494949]">Commercial</h2>
+            <div class=" absolute text w-72 h-48 lg:w-full lg:h-56 py-6 pl-4 space-y-3 ml-72">
+              <h2 class="text-xl font-bold text-[#494949]">Commercial</h2>
               <p class="text-[#737373] text-base">The barn house captivates with its blend of rustic charm <br> and
-                modern. The
-                barn house captivates with its blend of <br> rustic charm and modern . </p>
+                modern. The barn house captivates with its blend of <br> rustic charm and modern. </p>
               <button class="text-[#212121] text-xl font-bold">View Details
                 <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow-primary rounded-full px-1 py-1"></i>
               </button>
             </div>
+           </div>
             <!-- Box-3 -->
-            <div class="border rounded-2xl p-2">
-              <img src="./assets/img2.png" alt="">
+            <div class="border rounded-2xl w-72 h-48 lg:w-96 lg:h-56 p-2">
+              <img class="w-full h-full" src="./assets/img2.png" alt="">
             </div>
           </div>
+
+
           <!-- Flex div-2 -->
-          <div class="grid grid-cols-1 lg:grid-cols-3">
-            <!-- Box-4 -->
-            <div class="border rounded-2xl p-2">
-              <img src="./assets/img3.png" alt="">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <!-- Box-1 -->
+            <div class="border rounded-2xl w-72 h-48 lg:w-70 lg:h-56 p-2">
+              <img class="w-full h-full" src="./assets/img3.png" alt="">
             </div>
-            <!-- double-box -->
-            <div class="flex flex-1 border rounded-2xl p-6 row-span-2">
-              <!-- Box-5 -->
-              <div>
-                <img src="./assets/img4.png" alt="">
+            <!-- Box-2 -->
+            <div class="lg:flex border rounded-2xl h-96 lg:w-auto lg:h-56 col-span-2 p-2">
+              <!-- Inner-box-1 -->
+              <div class="w-72 h-48 lg:w-72 lg:h-54 py-2 mr-6">
+                <img class="w-full h-full" src="./assets/img4.png" alt="">
               </div>
-              <!-- Box-6 -->
-              <div class="pl-4">
-                <h2 class="text-2xl font-bold text-[#494949]">Commercial</h2>
+              <!-- Inner-Box-2 -->
+              <div class="w-72 h-11 lg:w-60 lg:h-46 py-4 space-y-4">
+                <h2 class="text-xl font-bold text-[#494949]">Commercial</h2>
                 <p class="text-[#737373] text-base">The barn house captivates with its blend of rustic charm and
                   modern. .</p>
                 <button class="text-[#212121] text-xl font-bold">View Details
@@ -277,9 +280,9 @@
                 </button>
               </div>
             </div>
-            <!-- Box-7 -->
-            <div class="border rounded-2xl p-2">
-              <img src="./assets/img5.png" alt="">
+            <!-- Box-3 -->
+            <div class="border rounded-2xl w-72 h-48 lg:w-70 lg:h-56 p-2">
+              <img class="w-full h-full" src="./assets/img5.png" alt="">
             </div>
           </div>
         </div>
